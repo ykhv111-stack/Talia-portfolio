@@ -21,7 +21,7 @@ export default function AboutPage() {
             About Talia
           </h1>
           <p className="text-2xl text-brand-teal font-light">
-            Systems thinking, creative problem-solving, and AI integration
+            Operations. Infrastructure. Systems that move at human scale.
           </p>
         </motion.div>
       </section>
@@ -37,18 +37,67 @@ export default function AboutPage() {
             className="space-y-6"
           >
             <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
-              Who I Am
+              Who
             </h2>
             <div className="space-y-4 text-lg text-gray-700">
               <p>
-                I'm a systems thinker obsessed with making complex things work. I build products, automate workflows, and design systems that put humans in control while leveraging AI's strengths.
+                I'm Talia—an Ops & Systems Specialist studying Philosophy and Sociology at Hebrew University. I build infrastructure that lets people move faster, think clearer, and stay in control.
               </p>
               <p>
-                My background spans product design, software engineering, and AI integration. I've led teams through critical problems, built systems under pressure, and learned a lot about what works and what doesn't.
+                I've spent the last few years designing systems that scale. Running 200+ events for tens of thousands of people. Matching 10,000+ volunteers to critical needs in 72 hours. Translating complex organizational goals into workflows that actually work.
               </p>
               <p>
-                What drives me: Creating solutions that are both technically sound and deeply considerate of human needs.
+                What I've learned: Great infrastructure is invisible. It doesn't demand attention. It just gets out of the way and lets humans do what they do best.
               </p>
+            </div>
+          </motion.div>
+
+          {/* What */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="space-y-6"
+          >
+            <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
+              What I've Built
+            </h2>
+            <div className="space-y-6">
+              <div className="border-l-4 border-brand-teal pl-6">
+                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
+                  CRM Architecture at Scale
+                </h3>
+                <p className="text-gray-700">
+                  Built end-to-end Zoho CRM infrastructure for Radical—automating customer lifecycles and complex data segmentation. Turned 12,000+ titles across 100 points of sale into a coherent, automated system for repeat engagement and community retention.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-brand-orange pl-6">
+                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
+                  Operations & Events Backbone
+                </h3>
+                <p className="text-gray-700">
+                  As Operations Lead at Radical (2021–2024), I orchestrated 200+ events, managed diverse teams and vendors, and translated organizational goals into efficient technical workflows. Kept the entire complex ecosystem of an academic-cultural institution running smoothly.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-brand-teal pl-6">
+                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
+                  Rapid-Response Aid Network
+                </h3>
+                <p className="text-gray-700">
+                  During the "Iron Swords" crisis (Oct 2023–Feb 2024), I built real-time matching infrastructure using Airtable and Make.com, orchestrating 10,000+ volunteers. Automated mass-communication via WhatsApp API to drastically cut response time when people needed help most.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-brand-orange pl-6">
+                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
+                  Data Analysis Under Pressure
+                </h3>
+                <p className="text-gray-700">
+                  As Epidemiological Investigator in the IDF (2020–2022), I analyzed large-scale data patterns and performed contact tracing to cut infection chains under extreme time pressure. Also mentored youth-at-risk, designing educational pathways that mattered.
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -60,37 +109,37 @@ export default function AboutPage() {
             className="space-y-6 bg-brand-off-white p-8 rounded-lg border-l-4 border-brand-teal"
           >
             <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
-              How I Work
+              How
             </h2>
             <div className="space-y-4 text-gray-700">
               <div>
-                <h3 className="font-semibold text-brand-teal mb-2">Start with clarity</h3>
+                <h3 className="font-semibold text-brand-teal mb-2">Understand before building</h3>
                 <p>
-                  Before building anything, I understand the problem deeply. What are we really trying to solve? What are the constraints? What matters most?
+                  I start with the actual problem, not the assumed one. What are the constraints? Who needs what? What happens when systems break? This grounding prevents expensive mistakes later.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-brand-teal mb-2">Design systematically</h3>
+                <h3 className="font-semibold text-brand-orange mb-2">Design with data and intention</h3>
                 <p>
-                  I create design systems and architectural frameworks that guide decisions at every level. Consistency, scalability, and flexibility from the ground up.
+                  Whether it's ERD modeling, API architecture, or workflow design—every choice gets grounded in reality. I map the system, find the bottlenecks, then automate what can be automated while keeping humans in the loop for judgment calls.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-brand-teal mb-2">Execute with intention</h3>
+                <h3 className="font-semibold text-brand-teal mb-2">Favor clarity over cleverness</h3>
                 <p>
-                  Every decision gets documented. Why did we choose this? What were the tradeoffs? This approach keeps things aligned and makes iteration faster.
+                  Complex systems need clear documentation. Why did we choose this path? What are the tradeoffs? This makes iteration faster and keeps teams aligned even at scale.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-brand-orange mb-2">Layer human judgment</h3>
+                <h3 className="font-semibold text-brand-orange mb-2">Layer AI, not replace thinking</h3>
                 <p>
-                  I use AI as a tool, never a replacement for thinking. The goal is always systems where humans have visibility, understanding, and control over critical decisions.
+                  AI is a tool for speed and pattern recognition. But humans need to see inside critical systems. My approach: automation handles repetitive work, humans make judgment calls, systems are transparent.
                 </p>
               </div>
             </div>
           </motion.div>
 
-          {/* Values */}
+          {/* Skills */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -98,82 +147,63 @@ export default function AboutPage() {
             className="space-y-6"
           >
             <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
-              Values
+              Skills & Tools
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="border-l-4 border-brand-teal pl-6">
-                <h3 className="font-semibold text-lg text-brand-teal mb-2">Clarity</h3>
-                <p className="text-gray-700">
-                  Complex problems need clear thinking. I prefer explicit trade-offs over hidden compromises.
-                </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="font-semibold text-lg text-brand-teal mb-3">Architecture & Design</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• System Design & ERD Modeling</li>
+                  <li>• API Architecture & Integration</li>
+                  <li>• Database Mapping & Schema Design</li>
+                  <li>• Workflow Automation (Make.com, Zapier)</li>
+                </ul>
               </div>
-              <div className="border-l-4 border-brand-orange pl-6">
-                <h3 className="font-semibold text-lg text-brand-orange mb-2">Agency</h3>
-                <p className="text-gray-700">
-                  Humans should understand and control their systems. Black boxes are dangerous.
-                </p>
+              <div>
+                <h3 className="font-semibold text-lg text-brand-orange mb-3">Platforms & Tools</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Zoho CRM, Airtable, Google Sheets</li>
+                  <li>• WhatsApp API & Messaging Infrastructure</li>
+                  <li>• Excel Logic & Data Analysis</li>
+                  <li>• AI Implementation & Prompt Engineering</li>
+                </ul>
               </div>
-              <div className="border-l-4 border-brand-teal pl-6">
-                <h3 className="font-semibold text-lg text-brand-teal mb-2">Excellence</h3>
-                <p className="text-gray-700">
-                  Good enough isn't good enough when it matters. I care about getting details right.
-                </p>
+              <div>
+                <h3 className="font-semibold text-lg text-brand-teal mb-3">Core Strengths</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Rapid Technical Learning</li>
+                  <li>• Independent Execution</li>
+                  <li>• Critical Thinking & Problem-Solving</li>
+                  <li>• Teams & Leadership</li>
+                </ul>
               </div>
-              <div className="border-l-4 border-brand-orange pl-6">
-                <h3 className="font-semibold text-lg text-brand-orange mb-2">Curiosity</h3>
-                <p className="text-gray-700">
-                  I'm constantly learning, experimenting, and questioning assumptions.
-                </p>
+              <div>
+                <h3 className="font-semibold text-lg text-brand-orange mb-3">Languages</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Hebrew (Native)</li>
+                  <li>• English (Academic)</li>
+                </ul>
               </div>
             </div>
           </motion.div>
 
-          {/* Experience */}
+          {/* What Now */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="space-y-6"
+            className="space-y-6 bg-blue-50 p-8 rounded-lg"
           >
             <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
-              What I've Built
+              What Now
             </h2>
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
-                  Critical Systems Under Pressure
-                </h3>
-                <p className="text-gray-700">
-                  Designed and built systems that needed to work reliably when it mattered most. Learned how to layer automation with human oversight.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
-                  AI-Assisted Workflows
-                </h3>
-                <p className="text-gray-700">
-                  Built systems that use AI for speed and pattern recognition while keeping humans in control of critical decisions.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
-                  Design Systems & Products
-                </h3>
-                <p className="text-gray-700">
-                  Created frameworks, design systems, and products that prioritize clarity, accessibility, and user control.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-brand-charcoal mb-2">
-                  Teams & Leadership
-                </h3>
-                <p className="text-gray-700">
-                  Led teams through complex problems, fostered cultures of clear thinking and intentional decision-making.
-                </p>
-              </div>
+            <div className="space-y-4 text-lg text-gray-700">
+              <p>
+                I'm focused on the intersection of AI and boundaries. How do we build systems where AI amplifies human judgment without replacing it? Where automation makes people faster but not careless? Where infrastructure serves humans, not the reverse.
+              </p>
+              <p>
+                I'm exploring how to design AI workflows, prompt engineering, and system architecture that keeps humans in control, visible, and thinking. That's where the interesting work is right now.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -183,36 +213,30 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-brand-off-white">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
-            Let's Work Together
+            Get in Touch
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Whether you're building a critical system, designing an AI workflow, or just want to discuss ideas about technology and creativity, I'd love to hear from you.
+            I'm interested in systems work, infrastructure challenges, AI integration, and interesting conversations about how technology shapes what we can do.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="mailto:hello@talia.dev"
-              className="inline-block px-8 py-3 bg-brand-teal text-white font-medium rounded hover:bg-brand-teal-dark transition"
+              href="mailto:taliatamirg@gmail.com"
+              className="inline-block px-8 py-3 bg-brand-teal text-white font-medium rounded hover:bg-opacity-90 transition"
             >
-              Send an Email
+              Email
             </a>
             <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+972502577434"
               className="inline-block px-8 py-3 border-2 border-brand-orange text-brand-orange font-medium rounded hover:bg-brand-orange hover:text-white transition"
             >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-3 border-2 border-brand-teal text-brand-teal font-medium rounded hover:bg-brand-teal hover:text-white transition"
-            >
-              LinkedIn
+              Call: 050-2577434
             </a>
           </div>
+
+          <p className="text-sm text-gray-600 mt-8">
+            Based in Israel | Available for remote work
+          </p>
         </div>
       </section>
     </>
