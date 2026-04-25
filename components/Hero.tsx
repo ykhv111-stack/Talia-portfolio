@@ -39,27 +39,39 @@ export default function Hero() {
               variants={itemVariants}
               className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-charcoal leading-tight"
             >
-              I built a system that needed to work.
+              Hey! I'm Talia.
             </motion.h1>
 
             <motion.div variants={itemVariants} className="space-y-4 text-lg sm:text-xl text-gray-700 font-light">
               <p>
-                And I had to choose: let AI run it, or keep control.
-              </p>
-              <p className="text-brand-teal font-semibold">
-                I chose control. But differently than I thought I would.
+                I love building things in a creative way.
               </p>
               <p>
-                This is what I learned.
+                I've managed large-scale operations under pressure — scaling volunteer networks, orchestrating hundreds of events - turning Ideas and chaos to a creation.
+              </p>
+              <p>
+                I study philosophy and sociology because I want to understand why systems work the way they do.
+              </p>
+              <p className="text-brand-teal font-semibold">
+                Now I'm thinking about AI the same way: How should we use it? How it can create things we don't know ourselves? What's are the new boundaries of knowledge and action?
+              </p>
+              <p className="font-semibold">
+                See what I've learned.
               </p>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="pt-4">
+            <motion.div variants={itemVariants} className="pt-4 flex gap-4">
               <a
                 href="#work"
                 className="inline-block px-8 py-3 bg-brand-teal text-white font-medium rounded hover:bg-brand-teal-dark transition duration-300"
               >
-                See My Work →
+                View Work →
+              </a>
+              <a
+                href="#contact"
+                className="inline-block px-8 py-3 border-2 border-brand-teal text-brand-teal font-medium rounded hover:bg-brand-teal hover:text-white transition duration-300"
+              >
+                Get in Touch
               </a>
             </motion.div>
           </div>
