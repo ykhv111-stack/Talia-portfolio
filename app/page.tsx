@@ -50,16 +50,35 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center px-4 md:px-8">
-        <div className="max-w-2xl text-center">
-          <h1 className="text-6xl md:text-8xl font-light mb-8 text-gray-900">
-            talia
-          </h1>
-          <p className="text-2xl md:text-3xl text-gray-800 mb-6 font-light leading-relaxed">
-            i build systems where humans stay in control
-          </p>
-          <p className="text-lg text-gray-600 mb-12 max-w-xl mx-auto leading-relaxed">
-            production manager. operations builder. philosophy student. thinking about how to use ai, systems thinking, and structured operations to create things that matter.
-          </p>
+        <div className="max-w-4xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex-1 text-left md:text-left">
+            <h1 className="text-5xl md:text-7xl font-light mb-6 text-gray-900">
+              let's talk
+            </h1>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
+              production manager. operations builder. philosophy student. thinking about how to use ai, systems thinking, and structured operations to create things that matter.
+            </p>
+            <button
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-medium"
+            >
+              Get in touch
+            </button>
+          </div>
+          <div className="flex-1 flex justify-center md:justify-end">
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border-4 border-gray-100">
+              <img
+                src="/talia-circular.jpg"
+                alt="Talia Tamir"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
