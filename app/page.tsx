@@ -4,6 +4,13 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 
 export default function Home() {
+  const navigation = [
+    { label: 'Iron Swords', href: '/iron-swords' },
+    { label: 'Portfolio Website', href: '/portfolio-website' },
+    { label: 'Book Distribution', href: '/book-distribution' },
+    { label: 'About', href: '/about' },
+    { label: 'Creative Experiments', href: '/creative-experiments' },
+  ];
   const projects = [
     {
       title: 'portfolio.ai',
@@ -23,6 +30,24 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
+      {/* Navigation */}
+      <nav className="sticky top-0 bg-white/95 backdrop-blur border-b border-gray-200 z-50">
+        <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="/" className="font-bold text-lg hover:text-teal-600">Talia</a>
+          <div className="hidden md:flex gap-8">
+            {navigation.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm hover:text-teal-600 transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center px-4 md:px-8">
         <div className="max-w-2xl text-center">
