@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function AboutPage() {
   return (
@@ -39,7 +40,8 @@ export default function AboutPage() {
             <h2 className="font-serif text-4xl font-bold text-brand-charcoal">
               Who
             </h2>
-            <div className="space-y-4 text-lg text-gray-700">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+              <div className="flex-1 space-y-4 text-lg text-gray-700">
               <p>
                 I'm Talia—an Ops & Systems Specialist studying Philosophy and Sociology at Hebrew University. I build infrastructure that lets people move faster, think clearer, and stay in control.
               </p>
@@ -49,6 +51,22 @@ export default function AboutPage() {
               <p>
                 What I've learned: Great infrastructure is invisible. It doesn't demand attention. It just gets out of the way and lets humans do what they do best.
               </p>
+              </div>
+              
+              {/* Photo */}
+              <div className="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                  <Image
+                    src="/images/talia-about.jpg"
+                    alt="Talia Tamir, Operations & Systems Specialist"
+                    width={256}
+                    height={256}
+                    className="rounded-full shadow-lg object-cover w-full h-full"
+                    priority={false}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </motion.div>
 
