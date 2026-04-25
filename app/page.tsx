@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero'
 import ProjectPreview from '@/components/ProjectPreview'
-import CreativeExperimentsPreview from '@/components/CreativeExperimentsPreview'
 import CTASection from '@/components/CTASection'
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
     <>
       <Hero />
       <ProjectPreview />
-      <CreativeExperimentsPreview />
       <CTASection />
     </>
   )

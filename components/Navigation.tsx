@@ -11,7 +11,6 @@ export default function Navigation() {
     { label: 'Home', href: '/' },
     { label: 'Iron Swords', href: '/projects/iron-swords' },
     { label: 'Portfolio Website', href: '/projects/portfolio-website' },
-    { label: 'Creative Experiments', href: '/creative-experiments' },
     { label: 'About', href: '/about' },
   ]
 
