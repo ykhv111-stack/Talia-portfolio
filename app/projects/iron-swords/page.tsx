@@ -1,6 +1,7 @@
 'use client'
 
 import ProjectLayout from '@/components/ProjectLayout'
+import AnimatedChatBubbles from './AnimatedChatBubbles'
 import { motion } from 'framer-motion'
 
 export default function IronSwordsProject() {
@@ -30,8 +31,56 @@ export default function IronSwordsProject() {
       subtitle="Crisis Operations Pipeline at Humanitarian Scale"
       accentColor="teal"
     >
-      {/* What I Built Section */}
+      {/* THE PROBLEM Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="space-y-8"
+          >
+            <motion.div variants={itemVariants}>
+              <h2 className="font-serif text-4xl font-bold text-brand-charcoal mb-6">
+                The Problem
+              </h2>
+              <div className="space-y-6 text-lg text-gray-700">
+                <p>
+                  When the war broke out, the media organization I worked for was flooded with thousands of incoming messages daily — from people seeking help and individuals offering it. Requests arrived across multiple channels (WhatsApp, phone, Instagram, email), in inconsistent formats, often incomplete — and some were fraudulent.
+                </p>
+
+                <div className="bg-brand-teal/5 border-l-4 border-brand-teal p-6 rounded-lg">
+                  <h3 className="font-semibold text-brand-charcoal mb-4 text-lg">
+                    Four specific needs were identified:
+                  </h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-teal font-bold text-xl">•</span>
+                      <span>Separate aid seekers from volunteers</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-teal font-bold text-xl">•</span>
+                      <span>Centralize all incoming messages into one organized place</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-teal font-bold text-xl">•</span>
+                      <span>Ensure messages were structured, verified, and matched accurately</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-teal font-bold text-xl">•</span>
+                      <span>Guarantee no request went unanswered</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* What I Built Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brand-off-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             variants={containerVariants}
@@ -86,7 +135,7 @@ export default function IronSwordsProject() {
       </section>
 
       {/* Key Decisions */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brand-off-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             variants={containerVariants}
@@ -100,21 +149,21 @@ export default function IronSwordsProject() {
             </motion.h2>
 
             <motion.div variants={itemVariants} className="space-y-6">
-              <div className="border-l-4 border-brand-teal p-6 bg-white rounded">
+              <div className="border-l-4 border-brand-teal p-6 bg-brand-off-white rounded">
                 <h3 className="font-semibold text-brand-charcoal mb-3 text-lg">Automation vs. Control</h3>
                 <p className="text-gray-700">
                   Did I automate everything for speed, or keep humans in critical decisions? I chose human verification at every critical decision point.
                 </p>
               </div>
 
-              <div className="border-l-4 border-brand-teal p-6 bg-white rounded">
+              <div className="border-l-4 border-brand-teal p-6 bg-brand-off-white rounded">
                 <h3 className="font-semibold text-brand-charcoal mb-3 text-lg">Structure vs. Burden</h3>
                 <p className="text-gray-700">
                   Did I ask for lots of data to improve matching, or keep it simple? I reduced questions to only what was essential, so distressed people weren't overwhelmed.
                 </p>
               </div>
 
-              <div className="border-l-4 border-brand-teal p-6 bg-white rounded">
+              <div className="border-l-4 border-brand-teal p-6 bg-brand-off-white rounded">
                 <h3 className="font-semibold text-brand-charcoal mb-3 text-lg">Speed vs. Reliability</h3>
                 <p className="text-gray-700">
                   Did I build something complex and cutting-edge, or something simple and proven? I chose a simple architecture (Make + Airtable) that would be reliable under crisis conditions.
@@ -126,7 +175,7 @@ export default function IronSwordsProject() {
       </section>
 
       {/* The Impact */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brand-off-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             variants={containerVariants}
@@ -164,7 +213,7 @@ export default function IronSwordsProject() {
       </section>
 
       {/* What People Say */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brand-off-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             variants={containerVariants}
@@ -177,21 +226,15 @@ export default function IronSwordsProject() {
               What People Say
             </motion.h2>
 
-            <motion.div variants={itemVariants} className="space-y-6">
-              <blockquote className="bg-white p-6 rounded-lg border-l-4 border-brand-teal italic text-gray-700">
-                "שלום בנות ויישר כח על הקבוצה. בזכותכן שינעתי כבר 4 פעמים חבילות לחיילים, ציוד ביגוד למשפחה שביתה נשרף ועוד. יישר כח!"
-              </blockquote>
-
-              <blockquote className="bg-white p-6 rounded-lg border-l-4 border-brand-orange italic text-gray-700">
-                "היי! קוראים לי ליאור ואני הצטרפתי לקבוצה של ההתנדבות בתחילת המלחמה, מאז הלכתי למספר מקומות מבתי מלון ועד בייביסיטרים דרך הקבוצה וכבר כמה פעמים לבחורה עם שיתוק מוחין שהתפנתה מהאזור. האמא ביקשה למסור תודה ענקית על העשייה והיוזמה המבורכת שבזכותה מגיעות כל כך הרבה מתנדבות שמנעימות את זמנה בתקופה המאוד מאתגרת הזאת. ואני אישית רוצה להודות על הפלטפורמה הזאת שהופכת את ההתנדבות להרבה יותר קלה ונגישה❤️❤️ יוזמה מדהימה"
-              </blockquote>
+            <motion.div variants={itemVariants}>
+              <AnimatedChatBubbles />
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* If I Built This Today */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brand-off-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             variants={containerVariants}
